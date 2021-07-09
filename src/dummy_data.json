@@ -1,0 +1,244 @@
+{
+  "friends": [
+    {
+      "id": "1",
+      "firstName": "Tom",
+      "profilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg"
+    },
+    {
+      "id": "2",
+      "firstName": "Jerry",
+      "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKJxRmMYYDm5WDjCH8zck5UiXlsyYryZ4c8BTv7cRIlbJ-vA9"
+    },
+    {
+      "id": "3",
+      "firstName": "Henry",
+      "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUo2MvXw1s6UqOaItsYFuLt_4mjWFek8xIMlnK6YAy3DxNpxVv"
+    },
+    {
+      "id": "4",
+      "firstName": "Trump",
+      "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZSxnlQgZL31PoDWEHDcM4LLondqOpS6ZFKVYAs0x6ATlFBZ5"
+    },
+    {
+      "id": "5",
+      "firstName": "Hans",
+      "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN1yluZMpjcPLDrLn1cvbDe-R-uIte0kl5t4q6PyfUipYBRstD"
+    },
+    {
+      "id": "6",
+      "firstName": "Janny",
+      "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns"
+    }
+  ],
+  "chats": [
+    {
+      "channelID": 1,
+      "lastMesssage": "This app is amazing!",
+      "lastMessageDate": "2018-07-08 12:13:12",
+      "name": "Mike Montano",
+      "creator": {
+        "name": "Tom",
+        "profilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg"
+      },
+      "channel_participation": [
+        {
+          "name": "Trump",
+          "online": true,
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZSxnlQgZL31PoDWEHDcM4LLondqOpS6ZFKVYAs0x6ATlFBZ5"
+        }
+      ]
+    },
+    {
+      "channelID": 2,
+      "lastMesssage": "She's so cute!",
+      "lastMessageDate": "2018-07-08 12:13:12",
+      "name": "Family Gang",
+      "creator": {
+        "name": "Tom",
+        "profilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg"
+      },
+      "channel_participation": [
+        {
+          "name": "Jerry",
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKJxRmMYYDm5WDjCH8zck5UiXlsyYryZ4c8BTv7cRIlbJ-vA9"
+        },
+        {
+          "name": "Henry",
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUo2MvXw1s6UqOaItsYFuLt_4mjWFek8xIMlnK6YAy3DxNpxVv"
+        }
+      ]
+    },
+    {
+      "channelID": 3,
+      "lastMesssage": "Wow",
+      "lastMessageDate": "2018-07-08 12:13:12",
+      "name": "Cristina Radulescu",
+      "creator": {
+        "name": "Tom",
+        "profilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg"
+      },
+      "channel_participation": [
+        {
+          "online": false,
+          "name": "Trump",
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN1yluZMpjcPLDrLn1cvbDe-R-uIte0kl5t4q6PyfUipYBRstD"
+        }
+      ]
+    },
+    {
+      "channelID": 4,
+      "lastMesssage": "Tonight we party!",
+      "lastMessageDate": "2018-07-08 12:13:12",
+      "name": "Party Guys",
+      "creator": {
+        "name": "Tom",
+        "profilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg"
+      },
+      "channel_participation": [
+        {
+          "name": "Jerry",
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUo2MvXw1s6UqOaItsYFuLt_4mjWFek8xIMlnK6YAy3DxNpxVv"
+        },
+        {
+          "name": "Henry",
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUo2MvXw1s6UqOaItsYFuLt_4mjWFek8xIMlnK6YAy3DxNpxVv"
+        }
+      ]
+    },
+    {
+      "channelID": 5,
+      "lastMesssage": "See u tomorrow",
+      "lastMessageDate": "2018-07-08 12:13:12",
+      "name": "Debbie Rudin",
+      "creator": {
+        "name": "Tom",
+        "profilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg"
+      },
+      "channel_participation": [
+        {
+          "online": true,
+          "name": "Trump",
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN1yluZMpjcPLDrLn1cvbDe-R-uIte0kl5t4q6PyfUipYBRstD"
+        }
+      ]
+    },
+    {
+      "channelID": 6,
+      "lastMesssage": "Wow",
+      "lastMessageDate": "2018-07-08 12:13:12",
+      "name": "Mark Horrowitz",
+      "creator": {
+        "name": "Tom",
+        "profilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg"
+      },
+      "channel_participation": [
+        {
+          "online": true,
+          "name": "Trump",
+          "profilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": "32323",
+      "content": "Hey, how are you? Wanna check out my new chat app?",
+      "created": "2018-12-04 12:22:32",
+      "recipientFirstName": "Florian Marcu",
+      "recipientID": "22",
+      "recipientLastName": "333",
+      "recipientProfilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg",
+      "senderFirstName": "Tom",
+      "senderID": "33",
+      "senderLastName": "Jerry",
+      "senderProfilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u87uqvfKv5XVom6m0ovo3K7wlLSDxBjk-d60HIDZfjTwRg7p"
+    },
+    {
+      "id": "32323",
+      "content": "Of course! What features does it have?",
+      "created": "2018-12-04 12:22:32",
+      "recipientFirstName": "Florian Marcu",
+      "recipientID": "22",
+      "recipientLastName": "333",
+      "recipientProfilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg",
+      "senderFirstName": "Tom",
+      "senderID": "313",
+      "senderLastName": "Jerry",
+      "senderProfilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u87uqvfKv5XVom6m0ovo3K7wlLSDxBjk-d60HIDZfjTwRg7p"
+    },
+    {
+      "id": "32323",
+      "content": "You can send  text messages",
+      "created": "2018-12-04 12:22:32",
+      "recipientFirstName": "Florian Marcu",
+      "recipientID": "22",
+      "recipientLastName": "333",
+      "recipientProfilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg",
+      "senderFirstName": "Tom",
+      "senderID": "33",
+      "senderLastName": "Jerry",
+      "senderProfilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u87uqvfKv5XVom6m0ovo3K7wlLSDxBjk-d60HIDZfjTwRg7p"
+    },
+    {
+      "id": "32323",
+      "content": "Wow, photo sharing! Nice",
+      "created": "2018-12-04 12:22:32",
+      "recipientFirstName": "Florian Marcu",
+      "recipientID": "22",
+      "recipientLastName": "333",
+      "recipientProfilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg",
+      "senderFirstName": "Tom",
+      "senderID": "323",
+      "senderLastName": "Jerry",
+      "senderProfilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u87uqvfKv5XVom6m0ovo3K7wlLSDxBjk-d60HIDZfjTwRg7p"
+    },
+    {
+      "id": "32323",
+      "content": "Emojis too!",
+      "created": "2018-12-04 12:22:32",
+      "recipientFirstName": "Florian Marcu",
+      "recipientID": "22",
+      "recipientLastName": "333",
+      "recipientProfilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg",
+      "senderFirstName": "Tom",
+      "senderID": "33",
+      "senderLastName": "Jerry",
+      "senderProfilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u87uqvfKv5XVom6m0ovo3K7wlLSDxBjk-d60HIDZfjTwRg7p"
+    },
+    {
+      "id": "32323",
+      "content": "Wow",
+      "created": "2018-12-04 12:22:32",
+      "recipientFirstName": "Florian Marcu",
+      "recipientID": "22",
+      "recipientLastName": "333",
+      "recipientProfilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg",
+      "senderFirstName": "Tom",
+      "senderID": "313",
+      "senderLastName": "Jerry",
+      "senderProfilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u87uqvfKv5XVom6m0ovo3K7wlLSDxBjk-d60HIDZfjTwRg7p"
+    },
+    {
+      "id": "32323",
+      "content": "Yes, and it's all stored on Firebase!",
+      "created": "2018-12-04 12:22:32",
+      "recipientFirstName": "Florian Marcu",
+      "recipientID": "22",
+      "recipientLastName": "333",
+      "recipientProfilePictureURL": "https://1ofdmq2n8tc36m6i46scovo2e-wpengine.netdna-ssl.com/wp-content/uploads/2014/04/Steven_Hallam-slide.jpg",
+      "senderFirstName": "Tom",
+      "senderID": "33",
+      "senderLastName": "Jerry",
+      "senderProfilePictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmC0gv9dmnCx29dIhEW52y4sXxbGVzNwV-XcpyaGd-Efuzg1Ns",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u87uqvfKv5XVom6m0ovo3K7wlLSDxBjk-d60HIDZfjTwRg7p"
+    }
+  ]
+}

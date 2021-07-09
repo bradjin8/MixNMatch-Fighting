@@ -1,0 +1,41 @@
+{
+  "name": "video-access-token-server-node",
+  "version": "1.0.0",
+  "private": true,
+  "author": "instamobile.io",
+  "license": "MIT",
+  "description": "Video Access Token Server for Twilio",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/jest",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "keywords": [
+    "twilio",
+    "video",
+    "ip",
+    "video",
+    "chat",
+    "real",
+    "time",
+    "diggity"
+  ],
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.8.0",
+    "twilio": "^3.48.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6",
+    "jest": "^19.0.2",
+    "jsonwebtoken": "^7.4.0"
+  }
+}

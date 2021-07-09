@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mix n Match</string>
+    <string name="fb_app_id">285315185217069</string>
+    <string name="fb_login_protocol_scheme">fb285315185217069</string>
+</resources>
