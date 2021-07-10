@@ -219,10 +219,10 @@ const SignupScreen = (props) => {
           />
         </TouchableOpacity>
         <Text style={styles.title}>{IMLocalized('Create new account')}</Text>
-        <TNProfilePictureSelector
+        {/*<TNProfilePictureSelector
           setProfilePictureFile={setProfilePictureFile}
           appStyles={appStyles}
-        />
+        />*/}
         {renderSignupWithEmail()}
         {appConfig.isSMSAuthEnabled && (
           <>

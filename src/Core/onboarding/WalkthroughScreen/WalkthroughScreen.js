@@ -29,7 +29,7 @@ const WalkthroughScreen = (props) => {
   const _onDone = () => {
     deviceStorage.setShouldShowOnboardingFlow('false');
     if (appConfig.isDelayedLoginEnabled) {
-      navigation.navigate('DelayedHome');  
+      navigation.navigate('DelayedHome');
       return;
     }
     navigation.navigate('LoginStack', { screen: 'Welcome' });
@@ -50,8 +50,8 @@ const WalkthroughScreen = (props) => {
         color="white"
       />
       <View>
-        <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.text}>{item.text}</Text>
+        {/*<Text style={styles.title}>{item.title}</Text>*/}
+        {/*<Text style={styles.text}>{item.text}</Text>*/}
       </View>
     </View>
   );

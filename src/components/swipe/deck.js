@@ -243,7 +243,7 @@ const Deck = (props) => {
       />
       {renderBottomTabBar()}
       {showMode == 1 && data[currentDeckIndex.current] && (
-        <Modal animationType={'slide'}>
+        <Modal animationType={'slide'} useNativeDriver={false}>
           <View style={styles.cardDetailContainer}>
             <View style={styles.cardDetailL}>
               {renderCardDetail(data[currentDeckIndex.current])}
@@ -255,7 +255,9 @@ const Deck = (props) => {
         <Modal
           transparent={false}
           visible={showMode == 2 ? true : false}
-          animationType={'slide'}>
+          animationType={'slide'}
+          useNativeDriver={false}
+        >
           <View style={styles.newMatch}>{renderNewMatch()}</View>
         </Modal>
       )}

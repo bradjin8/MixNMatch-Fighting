@@ -137,7 +137,9 @@ export default function IMSubscriptionScreen(props) {
       onDismiss={onClose}
       onRequestClose={onClose}
       animationType={'fade'}
-      presentationStyle={'pageSheet'}>
+      presentationStyle={'pageSheet'}
+      useNativeDriver={false}
+    >
       <View style={styles.container}>
         <View style={styles.carouselContainer}>
           <Swiper

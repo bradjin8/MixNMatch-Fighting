@@ -8,7 +8,7 @@ const regexForPhoneNumber = /\d{9}$/;
 const regexForAge = /[0-9]/g;
 
 const DatingConfig = {
-  isSMSAuthEnabled: true,
+  isSMSAuthEnabled: false,
   appIdentifier: 'rn-dating-android',
   onboardingConfig: {
     welcomeTitle: IMLocalized('Find Your Next Challenge!'),
@@ -97,6 +97,24 @@ const DatingConfig = {
       key: 'username',
       placeholder: 'Username',
     },
+/*
+    {
+      displayName: IMLocalized('Full Name'),
+      type: 'text',
+      editable: true,
+      regex: regexForNames,
+      key: 'fullName',
+      placeholder: 'Full Name',
+    },
+    {
+      displayName: IMLocalized('Phone Number'),
+      type: 'text',
+      editable: true,
+      regex: regexForPhoneNumber,
+      key: 'phoneNumber',
+      placeholder: 'Phone Number',
+    },
+*/
     {
       displayName: IMLocalized('E-mail Address'),
       type: 'text',

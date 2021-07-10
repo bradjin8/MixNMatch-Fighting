@@ -193,7 +193,7 @@ const WelcomeScreen = (props) => {
                 },
               })
             : props.navigation.navigate('LoginStack', {
-                screen: 'Login',
+                screen: 'Signup',
                 params: {
                   appStyles,
                   appConfig,

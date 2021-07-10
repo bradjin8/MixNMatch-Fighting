@@ -19,7 +19,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
     title: {
       fontSize: 30,
       fontWeight: 'bold',
-      color: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
+      color: appStyles.colorSet[colorScheme].mainTextColor,
       marginTop: 25,
       marginBottom: 20,
       alignSelf: 'stretch',

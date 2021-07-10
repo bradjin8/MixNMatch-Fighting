@@ -655,7 +655,9 @@ class IMAudioVideoChat extends React.Component {
         visible={this.state.modalVisible}
         onRequestClose={this.endCall}
         animationType={'fade'}
-        presentationStyle={'pageSheet'}>
+        presentationStyle={'pageSheet'}
+        useNativeDriver={false}
+      >
         {isCallAccepted && chatType === 'video' && (
           <VideoChatView
             videoTracks={videoTracks}

@@ -17,7 +17,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
     title: {
       fontSize: 30,
       fontWeight: 'bold',
-      color: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
+      color: appStyles.colorSet[colorScheme].mainTextColor,
       marginTop: 25,
       marginBottom: 30,
       alignSelf: 'stretch',
@@ -118,7 +118,6 @@ const dynamicStyles = (appStyles, colorScheme) => {
       zIndex: 2,
     },
     orTextStyle: {
-      color: 'black',
       marginTop: 20,
       marginBottom: 10,
       alignSelf: 'center',

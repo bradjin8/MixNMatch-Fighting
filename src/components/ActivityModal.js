@@ -12,7 +12,7 @@ const ActivityModal = ({
   titleColor,
 }) => {
   return (
-    <Modal transparent={true} animationType={'none'} visible={loading}>
+    <Modal transparent={true} animationType={'none'} visible={loading} useNativeModal={false}>
       <View
         style={[
           styles.modalBackground,

@@ -1,14 +1,14 @@
-import { setUsers } from '../../Core/users/redux';
+import {setUsers} from '../../Core/users/redux';
 import {
   setSwipes,
   setMatches,
   setIncomingSwipes,
   setSwipesListenerDidSubscribe,
 } from '../../redux/actions';
-import { setBannedUserIDs } from '../../Core/user-reporting/redux';
+import {setBannedUserIDs} from '../../Core/user-reporting/redux';
 import * as firebaseSwipe from './swipes';
-import { userAPIManager } from '../../Core/api';
-import { reportingManager } from '../../Core/user-reporting';
+import {userAPIManager} from '../../Core/api';
+import {reportingManager} from '../../Core/user-reporting';
 
 export default class SwipeTracker {
   constructor(reduxStore, userID) {
@@ -174,10 +174,12 @@ export default class SwipeTracker {
       const incomingSwipes = hydratedUsers
         .filter((user) => inboundUserIDs[user.id] == true)
         .filter((swipe) => !bannedUserIDs.includes(swipe.id));
+      // console.log('hydrateUsers', hydratedUsers)
       const hydratedMatches = hydratedUsers.filter(
         (user) =>
           outboundUserIDs[user.id] == true && inboundUserIDs[user.id] == true,
       );
+      // console.log('hydrateMatches', hydratedMatches)
       const finalMatches = hydratedMatches
         .filter((match) => !bannedUserIDs.includes(match.id))
         .map((user) => {

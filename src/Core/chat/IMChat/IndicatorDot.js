@@ -17,10 +17,12 @@ export default function IndicatorDot(props) {
       Animated.timing(animation.current, {
         duration: 500,
         toValue: 1,
+        useNativeDriver: false,
       }),
       Animated.timing(animation.current, {
         duration: 500,
         toValue: 0,
+        useNativeDriver: false,
       }),
     ]).start(() => {
       handleAnimation();

@@ -14,6 +14,7 @@ export const dating = (state = initialState, action) => {
     case IMSwipeActionsConstants.SET_INCOMING_SWIPES:
       return { ...state, incomingSwipes: [...action.data] };
     case IMSwipeActionsConstants.SET_MATCHES:
+      // console.log('reducer', IMSwipeActionsConstants.SET_MATCHES, action.data);
       return { ...state, matches: [...action.data] };
     case IMSwipeActionsConstants.DID_SUBSCRIBE_TO_SWIPES:
       return { ...state, didSubscribeToSwipes: true };

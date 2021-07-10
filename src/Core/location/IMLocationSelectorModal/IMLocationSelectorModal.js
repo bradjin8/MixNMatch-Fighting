@@ -80,7 +80,9 @@ function IMLocationSelectorModal(props) {
       animationType="slide"
       transparent={false}
       visible={isVisible}
-      onRequestClose={onCancel}>
+      onRequestClose={onCancel}
+      useNativeDriver={false}
+    >
       <SafeAreaView style={styles.container}>
         <View style={styles.navBarContainer}>
           <View style={styles.leftButtonContainer}>

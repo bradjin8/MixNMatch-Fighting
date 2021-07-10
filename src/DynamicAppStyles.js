@@ -10,7 +10,7 @@ const lightColorSet = {
   mainThemeForegroundColor: '#A01104',
   secondaryForegroundColor: '#f4f6fb',
   hairlineColor: '#d6d6d6',
-  mainTextColor: '#464646',
+  mainTextColor: '#232323',
   mainSubtextColor: '#7e7e7e',
   grayBgColor: '#f5f5f5',
   grey0: '#eaeaea',

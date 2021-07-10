@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {
   Alert,
   Image,
@@ -7,20 +7,21 @@ import {
   TextInput,
   TouchableOpacity,
   View,
+  Platform
 } from 'react-native';
 import Button from 'react-native-button';
 import appleAuth, {
   AppleButton,
 } from '@invertase/react-native-apple-authentication';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import TNActivityIndicator from '../../truly-native/TNActivityIndicator';
-import { IMLocalized } from '../../localization/IMLocalization';
+import {IMLocalized} from '../../localization/IMLocalization';
 import dynamicStyles from './styles';
-import { useColorScheme } from 'react-native-appearance';
-import { setUserData } from '../redux/auth';
-import { localizedErrorMessage } from '../utils/ErrorCode';
+import {useColorScheme} from 'react-native-appearance';
+import {setUserData} from '../redux/auth';
+import {localizedErrorMessage} from '../utils/ErrorCode';
 
 const LoginScreen = (props) => {
   const appConfig = props.route.params.appConfig;
@@ -50,14 +51,14 @@ const LoginScreen = (props) => {
           Keyboard.dismiss();
           props.navigation.reset({
             index: 0,
-            routes: [{ name: 'MainStack', params: { user: user } }],
+            routes: [{name: 'MainStack', params: {user: user}}],
           });
         } else {
           setLoading(false);
           Alert.alert(
             '',
             localizedErrorMessage(response.error),
-            [{ text: IMLocalized('OK') }],
+            [{text: IMLocalized('OK')}],
             {
               cancelable: false,
             },
@@ -77,14 +78,14 @@ const LoginScreen = (props) => {
         Keyboard.dismiss();
         props.navigation.reset({
           index: 0,
-          routes: [{ name: 'MainStack', params: { user: user } }],
+          routes: [{name: 'MainStack', params: {user: user}}],
         });
       } else {
         setLoading(false);
         Alert.alert(
           '',
           localizedErrorMessage(response.error),
-          [{ text: IMLocalized('OK') }],
+          [{text: IMLocalized('OK')}],
           {
             cancelable: false,
           },
@@ -98,18 +99,18 @@ const LoginScreen = (props) => {
     authManager.loginOrSignUpWithApple(appConfig).then((response) => {
       if (response?.user) {
         const user = response.user;
-        props.setUserData({ user });
+        props.setUserData({user});
         Keyboard.dismiss();
         props.navigation.reset({
           index: 0,
-          routes: [{ name: 'MainStack', params: { user: user } }],
+          routes: [{name: 'MainStack', params: {user: user}}],
         });
       } else {
         setLoading(false);
         Alert.alert(
           '',
           localizedErrorMessage(response.error),
-          [{ text: IMLocalized('OK') }],
+          [{text: IMLocalized('OK')}],
           {
             cancelable: false,
           },
@@ -129,16 +130,17 @@ const LoginScreen = (props) => {
   return (
     <View style={styles.container}>
       <KeyboardAwareScrollView
-        style={{ flex: 1, width: '100%' }}
+        style={{flex: 1, width: '100%'}}
         keyboardShouldPersistTaps="always">
         <TouchableOpacity
-          style={{ alignSelf: 'flex-start' }}
+          style={{alignSelf: 'flex-start'}}
           onPress={() => props.navigation.goBack()}>
           <Image
             style={appStyles.styleSet.backArrowStyle}
             source={appStyles.iconSet.backArrow}
           />
         </TouchableOpacity>
+        {Platform.OS !== 'android' && <View style={{height: '20%'}}></View>}
         <Text style={styles.title}>{IMLocalized('Sign In')}</Text>
         <TextInput
           style={styles.InputContainer}
@@ -160,11 +162,11 @@ const LoginScreen = (props) => {
           autoCapitalize="none"
         />
         <View style={styles.forgotPasswordContainer}>
-          <Button
+          {/*<Button
             style={styles.forgotPasswordText}
             onPress={() => onForgotPassword()}>
             {IMLocalized('Forgot password?')}
-          </Button>
+          </Button>*/}
         </View>
         <Button
           containerStyle={styles.loginContainer}
@@ -172,8 +174,8 @@ const LoginScreen = (props) => {
           onPress={() => onPressLogin()}>
           {IMLocalized('Log In')}
         </Button>
-        <Text style={styles.orTextStyle}> {IMLocalized('OR')}</Text>
-        <Button
+        {/*<Text style={styles.orTextStyle}> {IMLocalized('OR')}</Text>*/}
+        {/*<Button
           containerStyle={styles.facebookContainer}
           style={styles.facebookText}
           onPress={() => onFBButtonPress()}>
@@ -187,7 +189,7 @@ const LoginScreen = (props) => {
             buttonType={AppleButton.Type.SIGN_IN}
             onPress={() => onAppleButtonPress()}
           />
-        )}
+        )}*/}
         {appConfig.isSMSAuthEnabled && (
           <Button
             containerStyle={styles.phoneNumberContainer}
@@ -203,10 +205,11 @@ const LoginScreen = (props) => {
           </Button>
         )}
 
-        {loading && <TNActivityIndicator appStyles={appStyles} />}
+        {loading && <TNActivityIndicator appStyles={appStyles}/>}
       </KeyboardAwareScrollView>
     </View>
-  );
+  )
+    ;
 };
 
 export default connect(null, {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
+import React, {useState, useEffect, useRef, useContext} from 'react';
 import {
   StyleSheet,
   View,
@@ -8,27 +8,27 @@ import {
   Platform,
   AppState, // eslint-disable-line react-native/split-platform-components
 } from 'react-native';
-import { useSelector, useDispatch, ReactReduxContext } from 'react-redux';
+import {useSelector, useDispatch, ReactReduxContext} from 'react-redux';
 import Geolocation from '@react-native-community/geolocation';
-import { firebase } from '../../Core/api/firebase/config';
+import {firebase} from '../../Core/api/firebase/config';
 import ActivityModal from '../../components/ActivityModal';
 import Deck from '../../components/swipe/deck';
 import NoMoreCard from '../../components/swipe/no_more_card';
 import NewMatch from '../../components/swipe/newMatch';
 import DynamicAppStyles from '../../DynamicAppStyles';
 import DatingConfig from '../../DatingConfig';
-import { setUserData } from '../../Core/onboarding/redux/auth';
-import { userAPIManager } from '../../Core/api';
-import { isDatingProfileCompleteForUser } from '../../utils';
-import { TNTouchableIcon } from '../../Core/truly-native';
-import { SwipeTracker } from '../../api/';
-import { IMLocalized } from '../../Core/localization/IMLocalization';
+import {setUserData} from '../../Core/onboarding/redux/auth';
+import {userAPIManager} from '../../Core/api';
+import {isDatingProfileCompleteForUser} from '../../utils';
+import {TNTouchableIcon} from '../../Core/truly-native';
+import {SwipeTracker} from '../../api/';
+import {IMLocalized} from '../../Core/localization/IMLocalization';
 import dynamicStyles from './styles';
-import { useColorScheme } from 'react-native-appearance';
-import { notificationManager } from '../../Core/notifications';
-import { useIap } from '../../Core/inAppPurchase/context';
-import { getUserAwareCanUndoAsync } from '../../utils';
-import { useNavigation } from '@react-navigation/native';
+import {useColorScheme} from 'react-native-appearance';
+import {notificationManager} from '../../Core/notifications';
+import {useIap} from '../../Core/inAppPurchase/context';
+import {getUserAwareCanUndoAsync} from '../../utils';
+import {useNavigation} from '@react-navigation/native';
 import * as Location from 'expo-location';
 
 const SwipeScreen = (props) => {
@@ -36,9 +36,9 @@ const SwipeScreen = (props) => {
   const navigation = useNavigation();
   const styles = dynamicStyles(colorScheme);
 
-  const { store } = useContext(ReactReduxContext);
+  const {store} = useContext(ReactReduxContext);
 
-  const { setSubscriptionVisible } = useIap();
+  const {setSubscriptionVisible} = useIap();
   const user = useSelector((state) => state.auth.user);
   const swipes = useSelector((state) => state.dating.swipes);
   const bannedUserIDs = useSelector((state) => state.userReports.bannedUserIDs);
@@ -115,7 +115,8 @@ const SwipeScreen = (props) => {
   useEffect(() => {
     if (matches != null) {
       // We retrieve all new matches and notify the user
-      const unseenMatches = matches.filter((match) => !match.matchHasBeenSeen);
+      const unseenMatches = matches;//.filter((match) => !match.matchHasBeenSeen);
+      console.log('unseenMatches', unseenMatches)
       if (unseenMatches.length > 0 && !currentMatchData) {
         // Send push notification
         notificationManager.sendPushNotification(
@@ -123,7 +124,7 @@ const SwipeScreen = (props) => {
           IMLocalized('New match!'),
           IMLocalized('You just got a new match!'),
           'dating_match',
-          { fromUser: user },
+          {fromUser: user},
         );
         setCurrentMatchData(unseenMatches[0]);
       }
@@ -241,7 +242,7 @@ const SwipeScreen = (props) => {
           isOnline: true,
         })
         .then(() => {
-          dispatch(setUserData({ user: { ...user, isOnline: true } }));
+          dispatch(setUserData({user: {...user, isOnline: true}}));
         })
         .then(() => {
           setAppState(nextAppState);
@@ -255,7 +256,7 @@ const SwipeScreen = (props) => {
           isOnline: false,
         })
         .then(() => {
-          dispatch(setUserData({ user: { ...user, isOnline: false } }));
+          dispatch(setUserData({user: {...user, isOnline: false}}));
         })
         .then(() => {
           setAppState(nextAppState);
@@ -276,7 +277,7 @@ const SwipeScreen = (props) => {
 
   const handleAndroidLocationPermission = async () => {
     try {
-      const { status } = await Location.requestPermissionsAsync();
+      const {status} = await Location.requestPermissionsAsync();
       if (status === 'granted') {
         setPositionWatchID(watchPosition());
       } else {
@@ -307,7 +308,7 @@ const SwipeScreen = (props) => {
       userRef
         .update(locationDict)
         .then(() => {
-          dispatch(setUserData({ user: { ...user, ...locationDict } }));
+          dispatch(setUserData({user: {...user, ...locationDict}}));
         })
         .catch((error) => {
           console.log(error);
@@ -339,16 +340,17 @@ const SwipeScreen = (props) => {
           onPress: () => {
             user.profilePictureURL
               ? props.navigation.navigate('AccountDetails', {
-                  screenTitle: IMLocalized('Dating Profile'),
-                  appStyles: DynamicAppStyles,
-                  form: DatingConfig.editProfileFields,
-                  onComplete: () => {},
-                })
+                screenTitle: IMLocalized('Dating Profile'),
+                appStyles: DynamicAppStyles,
+                form: DatingConfig.editProfileFields,
+                onComplete: () => {
+                },
+              })
               : props.navigation.navigate('AddProfilePicture');
           },
         },
       ],
-      { cancelable: false },
+      {cancelable: false},
     );
   };
 
@@ -373,9 +375,9 @@ const SwipeScreen = (props) => {
         gender_preference: 'all',
         show_me: true,
       };
-      let newUser = { ...user, settings: userSettings };
+      let newUser = {...user, settings: userSettings};
       userAPIManager.updateUserData(user?.id, newUser);
-      dispatch(setUserData({ user: newUser }));
+      dispatch(setUserData({user: newUser}));
     }
     const myLocation = user.location;
     const myGenderPre =
@@ -385,7 +387,7 @@ const SwipeScreen = (props) => {
       userSettings.distance_radius.toLowerCase() != 'unlimited' &&
       userSettings.distance_radius.split(' ')) || ['100000'];
     const distanceValue = Number(appDistance[0]);
-    const { firstName, email, phone, profilePictureURL, id } = otherUser;
+    const {firstName, email, phone, profilePictureURL, id} = otherUser;
     const defaultAvatar =
       'https://www.iosapptemplates.com/wp-content/uploads/2019/06/empty-avatar.jpg';
     const gender = otherUser.settings ? otherUser.settings.gender : 'none';
@@ -544,7 +546,8 @@ const SwipeScreen = (props) => {
     }
 
     if (swipeItem && canSwipe) {
-      swipeTracker.current.addSwipe(user, swipeItem, type, (response) => {});
+      swipeTracker.current.addSwipe(user, swipeItem, type, (response) => {
+      });
 
       if (!userAwareCanUndo.current && type === 'dislike' && !isPlanActive) {
         shouldAlertCanUndo();
@@ -580,13 +583,13 @@ const SwipeScreen = (props) => {
           text: IMLocalized('Cancel'),
         },
       ],
-      { cancelable: true },
+      {cancelable: true},
     );
     userAwareCanUndo.current = true;
   };
 
   const renderEmptyState = () => {
-    return <NoMoreCard profilePictureURL={user.profilePictureURL} />;
+    return <NoMoreCard profilePictureURL={user.profilePictureURL}/>;
   };
 
   const renderNewMatch = () => {

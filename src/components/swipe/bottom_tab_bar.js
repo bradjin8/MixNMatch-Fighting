@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, {useRef} from 'react';
 import PropTypes from 'prop-types';
 import {
   StyleSheet,
@@ -8,7 +8,7 @@ import {
   Animated,
   Easing,
 } from 'react-native';
-import { size } from '../../helpers/devices';
+import {size} from '../../helpers/devices';
 import AppStyles from '../../AppStyles';
 
 const BottomTabBar = (props) => {
@@ -21,8 +21,10 @@ const BottomTabBar = (props) => {
     Animated.timing(scaleValue2.current, {
       toValue: 1,
       duration: 300,
+      useNativeDriver: false,
       easing: Easing.easeOutBack,
-    }).start(() => {});
+    }).start(() => {
+    });
     props.onDislikePressed();
   };
 
@@ -30,9 +32,11 @@ const BottomTabBar = (props) => {
     scaleValue3.current.setValue(0);
     Animated.timing(scaleValue3.current, {
       toValue: 1,
+      useNativeDriver: false,
       duration: 300,
       easing: Easing.easeOutBack,
-    }).start(() => {});
+    }).start(() => {
+    });
     props.onSuperLikePressed();
   };
 
@@ -42,7 +46,9 @@ const BottomTabBar = (props) => {
       toValue: 1,
       duration: 300,
       easing: Easing.easeOutBack,
-    }).start(() => {});
+      useNativeDriver: false,
+    }).start(() => {
+    });
     props.onLikePressed();
   };
 
@@ -53,7 +59,7 @@ const BottomTabBar = (props) => {
     });
 
     return {
-      transform: [{ scale }],
+      transform: [{scale}],
     };
   };
 
@@ -64,7 +70,7 @@ const BottomTabBar = (props) => {
     });
 
     return {
-      transform: [{ scale }],
+      transform: [{scale}],
     };
   };
 
@@ -75,7 +81,7 @@ const BottomTabBar = (props) => {
     });
 
     return {
-      transform: [{ scale }],
+      transform: [{scale}],
     };
   };
 
@@ -90,7 +96,7 @@ const BottomTabBar = (props) => {
           ]}>
           <Image
             source={AppStyles.iconSet.crossFilled}
-            style={[styles.large_icon, { tintColor: '#e8315b' }]}
+            style={[styles.large_icon, {tintColor: '#e8315b'}]}
           />
         </Animated.View>
       </TouchableWithoutFeedback>
@@ -106,7 +112,7 @@ const BottomTabBar = (props) => {
         <Animated.View style={[styles.button_container, getCardStyle4()]}>
           <Image
             source={AppStyles.iconSet.Like}
-            style={[styles.large_icon, { tintColor: '#44d48c' }]}
+            style={[styles.large_icon, {tintColor: '#44d48c'}]}
           />
         </Animated.View>
       </TouchableWithoutFeedback>
