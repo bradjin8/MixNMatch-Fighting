@@ -25,33 +25,38 @@ const TinderCard = (props) => {
           style={styles.name_info_container}
           source={AppStyles.iconSet.BackgroundLayer}>
           <View style={styles.userDetailContainer}>
-            <Text style={styles.name_style}>
-              {name ? name : ' '}, {age ? age : ' '}
-            </Text>
+            <View style={{flexDirection: "row", justifyContent: "space-between"}}>
+              <Text style={styles.name_style}>
+                {name ? name : ' '} {age ? age : ' '}
+              </Text>
+              <Text style={styles.name_style}>
+                4-1
+              </Text>
+            </View>
             <View style={styles.txtBox}>
-              <Image
+              {/*<Image
                 style={styles.icon}
                 source={AppStyles.iconSet.schoolIcon}
               />
-              <Text style={styles.label}>{school ? school : ' '}</Text>
+              <Text style={styles.label}>{school ? school : ' '}</Text>*/}
             </View>
             {distance && (
               <View style={styles.txtBox}>
-                <Image
+                {/*<Image
                   style={styles.icon}
                   source={AppStyles.iconSet.markerIcon}
                 />
-                <Text style={styles.label}>{distance}</Text>
+                <Text style={styles.label}>{distance}</Text>*/}
               </View>
             )}
           </View>
-          <View style={styles.undoIconContainer}>
+          {/*<View style={styles.undoIconContainer}>
             <TouchableOpacity
               onPress={props.undoSwipe}
               style={styles.roundUndoIconContainer}>
               <Image style={styles.icon} source={AppStyles.iconSet.undo} />
             </TouchableOpacity>
-          </View>
+          </View>*/}
         </ImageBackground>
       </FastImage>
     </View>

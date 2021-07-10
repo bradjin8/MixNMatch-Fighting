@@ -17,10 +17,10 @@ const NewMatch = (props) => {
         containerStyle={styles.button}
         style={styles.label}
         onPress={onSendMessage}>
-        {'SEND A MESSAGE'}
+        {"LET'S FIGHT!"}
       </Button>
       <TouchableOpacity style={styles.detailBtn} onPress={onKeepSwiping}>
-        <Text style={styles.label}>{IMLocalized('KEEP SWIPING')}</Text>
+        <Text style={styles.label}>{IMLocalized('KEEP SEARCHING')}</Text>
       </TouchableOpacity>
     </FastImage>
   );

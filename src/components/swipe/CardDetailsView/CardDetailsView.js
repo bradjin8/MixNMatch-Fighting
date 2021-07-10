@@ -116,152 +116,50 @@ const CardDetailsView = (props) => {
   return (
     <View style={{ flex: 1 }}>
       <ScrollView style={styles.body} bounces={false}>
-        <View style={styles.photoView}>
-          <Swiper
-            style={styles.wrapper}
-            removeClippedSubviews={false}
-            showsButtons={false}
-            loop={false}
-            paginationStyle={{ top: 5, bottom: null }}
-            dot={
-              <View
-                style={{
-                  backgroundColor: 'rgba(0,0,0,.2)',
-                  width: swiperDotWidth,
-                  height: 4,
-                  borderRadius: 4,
-                  margin: 2,
-                }}
-              />
-            }
-            activeDot={
-              <View
-                style={{
-                  backgroundColor: 'white',
-                  width: swiperDotWidth,
-                  height: 4,
-                  borderRadius: 4,
-                  margin: 2,
-                }}
-              />
-            }>
-            {myPhotos.map((photos, i) => {
-              return (
-                photos && (
-                  <FastImage
-                    key={'photos' + i}
-                    style={styles.profilePhoto}
-                    source={{ uri: photos }}
-                  />
-                )
-              );
-            })}
-          </Swiper>
-        </View>
-        <TouchableOpacity
-          style={styles.backView}
-          onPress={() => props.setShowMode(0)}>
-          <Image
-            style={styles.backIcon}
-            source={AppStyles.iconSet.arrowdownIcon}
-          />
-        </TouchableOpacity>
-        <View style={styles.titleView}>
-          <Text style={styles.nameText}>
-            {firstName} {lastName}
-          </Text>
-          <Text style={styles.ageText}>{age}</Text>
-        </View>
-        <View style={styles.captionView}>
-          <View style={styles.itemView}>
-            <Image style={styles.icon} source={AppStyles.iconSet.schoolIcon} />
-            <Text style={styles.text}>{school}</Text>
-          </View>
-          {props.distance && (
-            <View style={styles.itemView}>
-              <Image
-                style={styles.icon}
-                source={AppStyles.iconSet.markerIcon}
-              />
-
-              <Text style={[styles.text, { marginLeft: 2 }]}>
-                {props.distance}
-              </Text>
-            </View>
-          )}
-        </View>
-        <View style={styles.lineView} />
-        <View style={styles.bioView}>
-          <Text style={styles.bioText}>{bio}</Text>
-        </View>
-        {instagramPhotos.length > 0 && (
-          <View style={styles.instagramView}>
-            <View style={styles.itemView}>
-              <Text style={[styles.label, { fontWeight: 'bold' }]}>
-                {IMLocalized('Recent Instagram Photos')}
-              </Text>
-            </View>
+        <TouchableOpacity onPress={() => props.setShowMode(0)}>
+          <View style={styles.photoView}>
             <Swiper
+              style={styles.wrapper}
+              removeClippedSubviews={false}
               showsButtons={false}
               loop={false}
-              paginationStyle={{ top: -240, left: null, right: 0 }}
+              paginationStyle={{ top: 5, bottom: null }}
               dot={
                 <View
                   style={{
                     backgroundColor: 'rgba(0,0,0,.2)',
-                    width: 8,
-                    height: 8,
+                    width: swiperDotWidth,
+                    height: 4,
                     borderRadius: 4,
-                    marginLeft: 3,
-                    marginRight: 3,
-                    marginTop: 3,
-                    marginBottom: 3,
+                    margin: 2,
                   }}
                 />
               }
               activeDot={
                 <View
                   style={{
-                    backgroundColor: '#db6470',
-                    width: 8,
-                    height: 8,
+                    backgroundColor: 'white',
+                    width: swiperDotWidth,
+                    height: 4,
                     borderRadius: 4,
-                    marginLeft: 3,
-                    marginRight: 3,
-                    marginTop: 3,
-                    marginBottom: 3,
+                    margin: 2,
                   }}
                 />
               }>
-              {instagramPhotos.map((photos, i) => (
-                <View key={'photos' + i} style={styles.slide}>
-                  <FlatList
-                    horizontal={false}
-                    numColumns={3}
-                    data={photos}
-                    scrollEnabled={false}
-                    renderItem={({ item, index }) => (
-                      <TouchableOpacity
-                        onPress={() => {
-                          setIsImageViewerVisible(true);
-                          setTappedImageIndex(6 * i + index);
-                        }}
-                        key={'item' + index}
-                        style={styles.myphotosItemView}>
-                        {photosUpdated && item && (
-                          <FastImage
-                            style={{ width: '100%', height: '100%' }}
-                            source={{ uri: item }}
-                          />
-                        )}
-                      </TouchableOpacity>
-                    )}
-                  />
-                </View>
-              ))}
+              <View style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                <Text style={styles.nameText}>{firstName + ' ' + lastName}</Text>
+                <Text style={styles.infoText}>Portland, OR</Text>
+                <Text style={styles.infoText}>Kick boxing, wrestling</Text>
+                <View style={{height: 20}}/>
+                <Text style={styles.infoText}>Weight 140</Text>
+                <Text style={styles.infoText}>Height 5'9</Text>
+                <Text style={styles.infoText}>Arm Reach 5'9</Text>
+                <Text style={styles.infoText}>Leg Reach 5'9</Text>
+                <Text style={styles.infoText}>Injuries Left Knee</Text>
+              </View>
             </Swiper>
           </View>
-        )}
+        </TouchableOpacity>
         <View style={{ height: 95 }} />
       </ScrollView>
       <View style={styles.inlineActionsContainer}>
@@ -271,7 +169,7 @@ const CardDetailsView = (props) => {
             onDislikePressed={onDislikePressed}
             onSuperLikePressed={onSuperLikePressed}
             onLikePressed={onLikePressed}
-            containerStyle={{ width: '58%' }}
+            containerStyle={{ width: '80%' }}
           />
         )}
         <ImageView

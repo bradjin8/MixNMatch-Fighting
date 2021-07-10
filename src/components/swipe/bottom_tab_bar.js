@@ -93,26 +93,27 @@ const BottomTabBar = (props) => {
             styles.button_container,
             getCardStyle2(),
             props.buttonContainerStyle,
+            {backgroundColor: '#D41212'}
           ]}>
           <Image
-            source={AppStyles.iconSet.crossFilled}
-            style={[styles.large_icon, {tintColor: '#e8315b'}]}
+            source={AppStyles.iconSet.thumbDown}
+            style={[styles.large_icon]}
           />
         </Animated.View>
       </TouchableWithoutFeedback>
-      <TouchableWithoutFeedback onPress={onSuperLikePress}>
+      {/*<TouchableWithoutFeedback onPress={onSuperLikePress}>
         <Animated.View style={[styles.button_container, getCardStyle3()]}>
           <Image
             source={AppStyles.iconSet.starFilled}
             style={styles.small_icon}
           />
         </Animated.View>
-      </TouchableWithoutFeedback>
+      </TouchableWithoutFeedback>*/}
       <TouchableWithoutFeedback onPress={onLikePress}>
-        <Animated.View style={[styles.button_container, getCardStyle4()]}>
+        <Animated.View style={[styles.button_container, getCardStyle4(), {backgroundColor: '#4A8528'}]}>
           <Image
-            source={AppStyles.iconSet.Like}
-            style={[styles.large_icon, {tintColor: '#44d48c'}]}
+            source={AppStyles.iconSet.thumbUp}
+            style={[styles.large_icon]}
           />
         </Animated.View>
       </TouchableWithoutFeedback>
@@ -133,7 +134,7 @@ BottomTabBar.propTypes = {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: 'center',
     margin: size(10),
     marginHorizontal: size(40),

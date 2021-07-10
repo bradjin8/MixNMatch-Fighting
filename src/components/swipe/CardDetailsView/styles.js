@@ -1,19 +1,22 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 import DynamicAppStyles from '../../../DynamicAppStyles';
-import { DEVICE_HEIGHT } from '../../../helpers/statics';
-import { size } from '../../../helpers/devices';
+import {DEVICE_HEIGHT} from '../../../helpers/statics';
+import {size} from '../../../helpers/devices';
 
 const dynamicStyles = (colorScheme) => {
   return StyleSheet.create({
     body: {
       flex: 1,
       backgroundColor:
-        DynamicAppStyles.colorSet[colorScheme].mainThemeBackgroundColor,
+      DynamicAppStyles.colorSet[colorScheme].mainThemeBackgroundColor,
     },
     photoView: {
       width: '100%',
-      height: DEVICE_HEIGHT * 0.5,
-      backgroundColor: 'skyblue',
+      top: DEVICE_HEIGHT * 0.05,
+      height: DEVICE_HEIGHT * 0.7,
+      backgroundColor: 'rgba(0,0,0,0.8)',
+      borderRadius: 20,
+      paddingVertical: DEVICE_HEIGHT * 0.04,
     },
     profilePhoto: {
       width: '100%',
@@ -49,7 +52,13 @@ const dynamicStyles = (colorScheme) => {
       fontSize: 30,
       fontWeight: 'bold',
       marginRight: 10,
-      color: DynamicAppStyles.colorSet[colorScheme].mainTextColor,
+      color: DynamicAppStyles.colorSet[colorScheme].whiteSmoke,
+    },
+    infoText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      paddingVertical: 15,
+      color: DynamicAppStyles.colorSet[colorScheme].mainSubtextColor,
     },
     ageText: {
       bottom: 1,
@@ -121,7 +130,7 @@ const dynamicStyles = (colorScheme) => {
       flex: 1,
       width: '100%',
       backgroundColor:
-        DynamicAppStyles.colorSet[colorScheme].inlineActionsColor,
+      DynamicAppStyles.colorSet[colorScheme].inlineActionsColor,
       alignSelf: 'center',
       alignItems: 'center',
       position: 'absolute',

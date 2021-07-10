@@ -69,6 +69,8 @@ const _iconSet = {
   textBoederImgReceive: require('../assets/images/textBorderImg2.png'),
   starFilled: require('../assets/images/star-filled-icon2.png'),
   crossFilled: require('../assets/images/cross-filled-icon.png'),
+  thumbUp: require('../assets/icons/thumb-up.png'),
+  thumbDown: require('../assets/icons/thumb-down.png'),
 };
 
 const _styleSet = {
