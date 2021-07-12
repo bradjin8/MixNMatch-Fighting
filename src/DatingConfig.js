@@ -209,29 +209,67 @@ const DatingConfig = {
         title: IMLocalized('DISCOVERY'),
         fields: [
           {
-            displayName: IMLocalized('Show Me on Instadating'),
+            displayName: IMLocalized('Show Me on Mix n\' Match'),
             type: 'switch',
             editable: true,
             key: 'show_me',
             value: true,
           },
           {
-            displayName: IMLocalized('Distance Radius'),
+            displayName: IMLocalized('Maximum Distance'),
             type: 'select',
             options: ['5', '10', '15', '25', '50', '100', 'unlimited'],
             displayOptions: [
               '5 miles',
               '10 miles',
-              '15 miles',
-              '25 miles',
+              '20 miles',
+              // '25 miles',
               '50 miles',
-              '100 miles',
-              'Unlimited',
+              // '100 miles',
+              // 'Unlimited',
             ],
             editable: true,
             key: 'distance_radius',
             value: 'Unlimited',
           },
+        ],
+      },
+      {
+        title: IMLocalized('PUSH NOTIFICATIONS'),
+        fields: [
+          {
+            displayName: IMLocalized('New matches'),
+            type: 'switch',
+            editable: true,
+            key: 'push_new_matches_enabled',
+            value: true,
+          },
+          {
+            displayName: IMLocalized('Messages'),
+            type: 'switch',
+            editable: true,
+            key: 'push_new_messages_enabled',
+            value: true,
+          },
+          // {
+          //   displayName: IMLocalized('Super Likes'),
+          //   type: 'switch',
+          //   editable: true,
+          //   key: 'push_super_likes_enabled',
+          //   value: true,
+          // },
+          {
+            displayName: IMLocalized('Top Picks'),
+            type: 'switch',
+            editable: true,
+            key: 'push_top_picks_enabled',
+            value: true,
+          },
+        ],
+      },
+      {
+        title: IMLocalized('GENDER'),
+        fields: [
           {
             displayName: IMLocalized('Gender'),
             type: 'select',
@@ -253,41 +291,13 @@ const DatingConfig = {
         ],
       },
       {
-        title: IMLocalized('PUSH NOTIFICATIONS'),
+        title: 'ACCOUNT',
         fields: [
           {
-            displayName: IMLocalized('New matches'),
-            type: 'switch',
-            editable: true,
-            key: 'push_new_matches_enabled',
-            value: true,
+            displayName: IMLocalized('Support'),
+            type: 'button',
+            key: 'savebutton',
           },
-          {
-            displayName: IMLocalized('Messages'),
-            type: 'switch',
-            editable: true,
-            key: 'push_new_messages_enabled',
-            value: true,
-          },
-          {
-            displayName: IMLocalized('Super Likes'),
-            type: 'switch',
-            editable: true,
-            key: 'push_super_likes_enabled',
-            value: true,
-          },
-          {
-            displayName: IMLocalized('Top Picks'),
-            type: 'switch',
-            editable: true,
-            key: 'push_top_picks_enabled',
-            value: true,
-          },
-        ],
-      },
-      {
-        title: '',
-        fields: [
           {
             displayName: IMLocalized('Save'),
             type: 'button',
