@@ -457,8 +457,8 @@ const MyProfileScreen = (props) => {
             ref={photoUploadDialogActionSheetRef}
             title={IMLocalized('Photo Upload')}
             options={[
-              IMLocalized('Launch Camera'),
-              IMLocalized('Open Photo Gallery'),
+              IMLocalized('Import from Library'),
+              IMLocalized('Take Photo'),
               IMLocalized('Cancel'),
             ]}
             cancelButtonIndex={2}

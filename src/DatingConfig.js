@@ -330,7 +330,7 @@ const DatingConfig = {
         ],
       },
       {
-        title: 'Our business hrs are Mon - Fri, 10am - 5pm, EST.',
+        title: IMLocalized('Our business hrs are Mon - Fri, 10am - 5pm, EST.'),
         fields: [
           // {
           //   displayName: IMLocalized('Call Us'),
