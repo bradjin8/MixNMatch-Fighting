@@ -117,7 +117,7 @@ function ThreadItem(props) {
     }
   };
 
-  const renderTextBoederImg = () => {
+  const renderTextBorderImg = () => {
     if (item.senderID === user.userID) {
       return (
         <Image
@@ -139,7 +139,7 @@ function ThreadItem(props) {
 
   const renderBoederImg = () => {
     if (isAudio) {
-      return renderTextBoederImg();
+      return renderTextBorderImg();
     }
     if (item.senderID === user.userID) {
       return (
@@ -240,7 +240,7 @@ function ThreadItem(props) {
                   {renderInReplyToIfNeeded(item, true)}
                   <View style={[styles.itemContent, styles.sendItemContent]}>
                     <Text style={styles.sendTextMessage}>{item.content}</Text>
-                    {renderTextBoederImg()}
+                    {renderTextBorderImg()}
                   </View>
                 </View>
               )}
@@ -302,7 +302,7 @@ function ThreadItem(props) {
                 {renderInReplyToIfNeeded(item, false)}
                 <View style={[styles.itemContent, styles.receiveItemContent]}>
                   <Text style={styles.receiveTextMessage}>{item.content}</Text>
-                  {renderTextBoederImg()}
+                  {renderTextBorderImg()}
                 </View>
               </View>
             )}

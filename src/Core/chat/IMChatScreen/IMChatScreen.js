@@ -158,7 +158,7 @@ const IMChatScreen = (props) => {
       headerTintColor: currentTheme.fontColor,
       headerRight: () => (
         <View style={{ flexDirection: 'row' }}>
-          <IMIconButton
+          {/*<IMIconButton
             source={require('../assets/settings-icon.png')}
             tintColor={appStyles.styleSet.backArrowStyle.tintColor}
             onPress={onSettingsPress}
@@ -181,7 +181,7 @@ const IMChatScreen = (props) => {
             marginRight={15}
             width={20}
             height={20}
-          />
+          />*/}
         </View>
       ),
     });

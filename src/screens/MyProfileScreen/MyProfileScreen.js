@@ -276,7 +276,7 @@ const MyProfileScreen = (props) => {
               ]}>
               <View style={styles.itemView}>
                 <Text style={styles.photoTitleLabel}>
-                  {IMLocalized('My Photos')}
+                  {IMLocalized('Gallery')}
                 </Text>
               </View>
               <Swiper
@@ -366,7 +366,7 @@ const MyProfileScreen = (props) => {
                 </Text>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity
+            {/*<TouchableOpacity
               style={styles.optionView}
               onPress={onUpgradeAccount}>
               <View style={styles.iconView}>
@@ -384,7 +384,7 @@ const MyProfileScreen = (props) => {
                   {IMLocalized('Upgrade Account')}
                 </Text>
               </View>
-            </TouchableOpacity>
+            </TouchableOpacity>*/}
             <TouchableOpacity style={styles.optionView} onPress={setting}>
               <View style={styles.iconView}>
                 <Image

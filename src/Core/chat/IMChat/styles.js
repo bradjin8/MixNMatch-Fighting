@@ -185,7 +185,7 @@ const dynamicStyles = (appStyles, colorScheme, outBound) => {
     },
     sendItemContent: {
       marginRight: 9,
-      backgroundColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
+      backgroundColor: appStyles.colorSet[colorScheme].mainTextColor,
     },
     mediaMessage: {
       width: size(300),
@@ -206,7 +206,7 @@ const dynamicStyles = (appStyles, colorScheme, outBound) => {
       width: 20,
       height: 8,
       resizeMode: 'stretch',
-      tintColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
+      tintColor: appStyles.colorSet[colorScheme].mainTextColor,
     },
     sendTextMessage: {
       fontSize: 16,
