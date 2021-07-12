@@ -303,15 +303,15 @@ const DatingConfig = {
         title: IMLocalized('CONTACT'),
         fields: [
           {
-            displayName: IMLocalized('Address'),
+            displayName: IMLocalized('Our address'),
             type: 'text',
             editable: false,
             key: 'push_notifications_enabled',
-            value: '142 Steiner Street, San Francisco, CA, 94115',
+            value: '123 Sherwood Forest Nottingham, UK',
           },
           {
             displayName: IMLocalized('E-mail us'),
-            value: 'florian@instamobile.io',
+            value: 'office@mixnmatch.io',
             type: 'text',
             editable: false,
             key: 'email',
@@ -320,13 +320,13 @@ const DatingConfig = {
         ],
       },
       {
-        title: '',
+        title: 'Our business hrs are Mon - Fri, 10am - 5pm, EST.',
         fields: [
-          {
-            displayName: IMLocalized('Call Us'),
-            type: 'button',
-            key: 'savebutton',
-          },
+          // {
+          //   displayName: IMLocalized('Call Us'),
+          //   type: 'button',
+          //   key: 'savebutton',
+          // },
         ],
       },
     ],

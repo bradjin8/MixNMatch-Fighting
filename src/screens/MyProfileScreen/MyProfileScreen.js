@@ -100,7 +100,7 @@ const MyProfileScreen = (props) => {
     props.navigation.navigate('ContactUs', {
       appStyles: DynamicAppStyles,
       form: DatingConfig.contactUsFields,
-      screenTitle: IMLocalized('Contact us'),
+      screenTitle: IMLocalized('Contact'),
     });
   };
 
