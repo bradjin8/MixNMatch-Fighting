@@ -138,14 +138,14 @@ const WelcomeScreen = (props) => {
         />
       )}
       <View style={styles.logo}>
-        {/*<Image
+        <Image
           style={styles.logoImage}
           source={
             props.delayedMode
               ? appStyles.iconSet.delayedLogo
               : appStyles.iconSet.logo
           }
-        />*/}
+        />
       </View>
       <Text style={styles.title}>
         {title ? title : appConfig.onboardingConfig.welcomeTitle}

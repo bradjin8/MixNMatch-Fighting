@@ -28,6 +28,15 @@ const dynamicStyles = (appStyles, colorScheme) => {
       alignItems: 'center',
       backgroundColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
     },
+    backgroundImage: {
+      flex: 1,
+      width: '100%',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    descriptionContainer: {
+      marginTop: '90%'
+    },
     button: {
       fontSize: 18,
       color: 'white',

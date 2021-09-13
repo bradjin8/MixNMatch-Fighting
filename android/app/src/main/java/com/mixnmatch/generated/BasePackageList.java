@@ -1,4 +1,4 @@
-package com.instadating.generated;
+package com.mixnmatch.generated;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,10 +1,8 @@
-package com.instadating.launchapplication;
+package com.mixnmatch.launchapplication;
 
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.app.Activity;
 import android.os.PowerManager;
 import android.view.WindowManager;
 
@@ -59,7 +57,7 @@ public class LaunchApplicationModule extends ReactContextBaseJavaModule {
   public void getLaunchManagerData(Callback callback) {
     callback.invoke(this.launchManagerData);
   }
-  
+
   @ReactMethod
   public void resetLaunchManagerData() {
       this.launchManagerData = null;

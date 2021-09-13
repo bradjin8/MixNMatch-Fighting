@@ -88,7 +88,7 @@ const _sizeSet = {
 
 const _iconSet = {
   playButton: require('./CoreAssets/play-button.png'),
-  logo: require('../assets/images/fire-icon.png'),
+  logo: require('../assets/images/MNM_LOGO.png'),
   userAvatar: require('../assets/images/default-avatar.jpg'),
   backArrow: require('./CoreAssets/arrow-back-icon.png'),
   fireIcon: require('../assets/images/fire-icon.png'),

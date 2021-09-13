@@ -73,8 +73,8 @@ const MyProfileStack = () => {
         options={({ navigation }) => ({
           headerTitle: () => (
             <TNTouchableIcon
-              imageStyle={{ tintColor: '#d1d7df' }}
-              iconSource={DynamicAppStyles.iconSet.fireIcon}
+              imageStyle={{ /*tintColor: '#d1d7df'*/ }}
+              iconSource={DynamicAppStyles.iconSet.logo}
               appStyles={DynamicAppStyles}
               onPress={() => navigation.navigate('Swipe')}
             />
@@ -169,11 +169,11 @@ const DrawerStack = () => {
           headerTitle: () => (
             <TNTouchableIcon
               imageStyle={{
-                tintColor:
+                /*tintColor:
                   DynamicAppStyles.colorSet[colorScheme]
-                    .mainThemeForegroundColor,
+                    .mainThemeForegroundColor,*/
               }}
-              iconSource={DynamicAppStyles.iconSet.fireIcon}
+              iconSource={DynamicAppStyles.iconSet.logo}
               onPress={() =>
                 navigation.navigate('Swipe', {
                   appStyles: DynamicAppStyles,
@@ -222,8 +222,8 @@ const DrawerStack = () => {
         options={({ navigation }) => ({
           headerTitle: () => (
             <TNTouchableIcon
-              imageStyle={{ tintColor: '#d1d7df' }}
-              iconSource={DynamicAppStyles.iconSet.fireIcon}
+              imageStyle={{ /*tintColor: '#d1d7df'*/ }}
+              iconSource={DynamicAppStyles.iconSet.logo}
               onPress={() => navigation.navigate('Swipe')}
               appStyles={DynamicAppStyles}
             />

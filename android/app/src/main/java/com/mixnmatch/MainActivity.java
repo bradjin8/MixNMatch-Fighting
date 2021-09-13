@@ -1,4 +1,4 @@
-package com.instadating;
+package com.mixnmatch;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -32,5 +32,5 @@ public class MainActivity extends ReactActivity {
         intent.putExtra("newConfig", newConfig);
         sendBroadcast(intent);
     }
-    
+
 }

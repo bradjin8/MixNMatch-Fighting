@@ -11,35 +11,35 @@ const DatingConfig = {
   isSMSAuthEnabled: false,
   appIdentifier: 'rn-dating-android',
   onboardingConfig: {
-    welcomeTitle: IMLocalized('Find Your Next Challenge!'),
+    welcomeTitle: IMLocalized('Find Sparring Partners\n Grow Your Community!'),
     welcomeCaption: IMLocalized(
       'Fight Your Way Up The Ladder',
     ),
     walkthroughScreens: [
       {
-        icon: require('../assets/images/fire-icon.png'),
-        title: 'Get a Date',
+        icon: require('../assets/images/workthrough-1.png'),
+        title: 'Mix It Up!',
         description: IMLocalized(
-          'Swipe right to get a match with people you like from your area.',
+          'Sign up and mix up your fights with\nanother style, develop, and fight!',
         ),
       },
       {
-        icon: require('../assets/images/chat.png'),
-        title: 'Private Messages',
-        description: IMLocalized('Chat privately with people you match.'),
+        icon: require('../assets/images/workthrough-2.png'),
+        title: 'Yes or No',
+        description: IMLocalized('Use the thumbs if you\'d like to add them\nas a contact or to disregard'),
       },
       {
-        icon: require('../assets/images/instagram.png'),
-        title: 'Send Photos & Videos',
+        icon: require('../assets/images/workthrough-3.png'),
+        title: 'Message',
         description: IMLocalized(
-          'Have fun with your matches by sending photos and videos to each other.',
+          'Communicate, plan, and meet others in\none platform',
         ),
       },
       {
-        icon: require('../assets/images/notification.png'),
-        title: 'Get Notified',
+        icon: require('../assets/images/workthrough-4.png'),
+        title: 'Match Up!',
         description: IMLocalized(
-          'Receive notifications when you get new messages and matches.',
+          'Find the right sparring and fighting partners\nto improve and get closer to being a Pro!!',
         ),
       },
     ],

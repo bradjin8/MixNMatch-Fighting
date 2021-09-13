@@ -1,9 +1,8 @@
-package com.instadating;
+package com.mixnmatch;
 
-import com.instadating.generated.BasePackageList;
+import com.mixnmatch.generated.BasePackageList;
 
 import android.app.Application;
-import android.util.Log;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -11,19 +10,16 @@ import android.content.res.Configuration;
 
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
 import org.unimodules.adapters.react.ReactModuleRegistryProvider;
-import org.unimodules.core.interfaces.SingletonModule;
 
 // import com.twiliorn.library.TwilioPackage;
 
 import com.facebook.react.PackageList;
-import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
-import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.instadating.launchapplication.LaunchApplicationPackage;
-import com.instadating.videoplayer.VideoPlayerPackage;
+import com.mixnmatch.launchapplication.LaunchApplicationPackage;
+import com.mixnmatch.videoplayer.VideoPlayerPackage;
 
 import java.util.List;
 import java.util.Arrays;

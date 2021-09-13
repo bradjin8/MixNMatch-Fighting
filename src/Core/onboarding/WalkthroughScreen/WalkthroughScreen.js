@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from 'react';
-import { View, Image, Text } from 'react-native';
+import {View, Image, Text, ImageBackground} from 'react-native';
 import PropTypes from 'prop-types';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import deviceStorage from '../utils/AuthDeviceStorage';
@@ -43,16 +43,18 @@ const WalkthroughScreen = (props) => {
 
   const _renderItem = ({ item, dimensions }) => (
     <View style={[styles.container, dimensions]}>
-      <Image
+      <ImageBackground source={item.image} resizeMode="stretch" style={styles.backgroundImage}>
+      {/*<Image
         style={styles.image}
         source={item.image}
         size={100}
         color="white"
-      />
-      <View>
-        {/*<Text style={styles.title}>{item.title}</Text>*/}
-        {/*<Text style={styles.text}>{item.text}</Text>*/}
+      />*/}
+      <View style={styles.descriptionContainer}>
+        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.text}>{item.text}</Text>
       </View>
+      </ImageBackground>
     </View>
   );
 
