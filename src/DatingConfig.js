@@ -293,11 +293,11 @@ const DatingConfig = {
       {
         title: 'ACCOUNT',
         fields: [
-          {
-            displayName: IMLocalized('Support'),
-            type: 'button',
-            key: 'savebutton',
-          },
+          // {
+          //   displayName: IMLocalized('Support'),
+          //   type: 'button',
+          //   key: 'savebutton',
+          // },
           {
             displayName: IMLocalized('Save'),
             type: 'button',

@@ -26,7 +26,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
+      backgroundColor: appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
     },
     backgroundImage: {
       flex: 1,

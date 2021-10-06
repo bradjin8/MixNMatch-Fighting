@@ -58,11 +58,11 @@ const LoadScreen = (props) => {
           }));
           Keyboard.dismiss();
         }
-        navigation.navigate('DelayedHome');  
+        navigation.navigate('DelayedHome');
       })
       .catch((error) => {
         console.log(error);
-        navigation.navigate('DelayedHome');  
+        navigation.navigate('DelayedHome');
       });
   };
 
