@@ -343,19 +343,19 @@ const DatingConfig = {
   },
   dailySwipeLimit: 10,
   subscriptionSlideContents: [
-    {
+    /*{
       title: IMLocalized('Go VIP'),
       description: IMLocalized(
         'When you subscribe, you get unlimited daily swipes, undo actions, VIP badge and more.',
       ),
       src: require('../assets/images/fencing.png'),
-    },
+    },*/
     {
       title: IMLocalized('Undo Actions'),
       description: IMLocalized('Get undo swipe actions when you subscribe.'),
       src: require('../assets/images/vip_1.png'),
     },
-    {
+    /*{
       title: IMLocalized('Vip Badge'),
       description: IMLocalized(
         'Stand out with vip badge amongst other swipes when you subscribe',
@@ -368,7 +368,7 @@ const DatingConfig = {
         'Get unlimited app access and more features to come.',
       ),
       src: require('../assets/images/vip-pass.png'),
-    },
+    },*/
   ],
   contactUsPhoneNumber: '+16504859694',
   IAP_SHARED_SECRET: '699db7fcf10c4922bf148caf334c89c6',

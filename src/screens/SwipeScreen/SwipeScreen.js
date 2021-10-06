@@ -160,7 +160,7 @@ const SwipeScreen = (props) => {
 
   const resetSwipeCountDetail = () => {
     swipeCountDetail.current = {
-      count: 0,
+      count: 10000,
       createdAt: {
         seconds: Date.now() / 1000,
       },
@@ -550,7 +550,7 @@ const SwipeScreen = (props) => {
       });
 
       if (!userAwareCanUndo.current && type === 'dislike' && !isPlanActive) {
-        shouldAlertCanUndo();
+        //shouldAlertCanUndo();
       }
     }
   };

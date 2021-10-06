@@ -82,7 +82,7 @@ const Deck = (props) => {
   };
 
   const undoSwipe = () => {
-    if (!hasActivePlan.current) {
+    if (false && !hasActivePlan.current) {
       requestUpgrade();
 
       return;
