@@ -24,17 +24,19 @@ const dynamicStyles = (appStyles, colorScheme) => {
     sendContainer: {
       width: '70%',
       backgroundColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
-      borderRadius: 25,
-      padding: 10,
+      borderRadius: 30,
+      padding: 20,
       marginTop: 30,
       alignSelf: 'center',
     },
     sendText: {
+      fontWeight: 'bold',
       color: '#ffffff',
     },
     InputContainer: {
       height: 42,
-      borderWidth: 1,
+      borderWidth: 0,
+      borderBottomWidth: 1,
       borderColor: appStyles.colorSet[colorScheme].grey3,
       backgroundColor: modedColor(
         appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
@@ -46,7 +48,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
       alignSelf: 'center',
       marginTop: 20,
       alignItems: 'center',
-      borderRadius: 25,
+      borderRadius: 0,
     },
   });
 };

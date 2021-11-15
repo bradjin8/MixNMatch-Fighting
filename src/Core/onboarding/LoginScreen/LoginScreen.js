@@ -127,6 +127,14 @@ const LoginScreen = (props) => {
     });
   };
 
+  const onSignUp = async () => {
+    props.navigation.push('Signup', {
+      appStyles,
+      appConfig,
+      authManager,
+    });
+  };
+
   return (
     <View style={styles.container}>
       <KeyboardAwareScrollView
@@ -144,7 +152,7 @@ const LoginScreen = (props) => {
         <Text style={styles.title}>{IMLocalized('Sign In')}</Text>
         <TextInput
           style={styles.InputContainer}
-          placeholder={IMLocalized('E-mail')}
+          placeholder={IMLocalized('Email')}
           placeholderTextColor="#aaaaaa"
           onChangeText={(text) => setEmail(text)}
           value={email}
@@ -161,19 +169,24 @@ const LoginScreen = (props) => {
           underlineColorAndroid="transparent"
           autoCapitalize="none"
         />
-        <View style={styles.forgotPasswordContainer}>
-          {/*<Button
-            style={styles.forgotPasswordText}
-            onPress={() => onForgotPassword()}>
-            {IMLocalized('Forgot password?')}
-          </Button>*/}
-        </View>
         <Button
           containerStyle={styles.loginContainer}
           style={styles.loginText}
           onPress={() => onPressLogin()}>
           {IMLocalized('Log In')}
         </Button>
+        <View style={styles.forgotPasswordContainer}>
+          <Button
+            style={styles.forgotPasswordText}
+            onPress={() => onForgotPassword()}>
+            {IMLocalized('Forgot password?')}
+          </Button>
+          <Button
+            style={styles.forgotPasswordText}
+            onPress={() => onSignUp()}>
+            {IMLocalized('Sign Up')}
+          </Button>
+        </View>
         {/*<Text style={styles.orTextStyle}> {IMLocalized('OR')}</Text>*/}
         {/*<Button
           containerStyle={styles.facebookContainer}
@@ -189,7 +202,7 @@ const LoginScreen = (props) => {
             buttonType={AppleButton.Type.SIGN_IN}
             onPress={() => onAppleButtonPress()}
           />
-        )}*/}
+        )}
         {appConfig.isSMSAuthEnabled && (
           <Button
             containerStyle={styles.phoneNumberContainer}
@@ -203,7 +216,7 @@ const LoginScreen = (props) => {
             }>
             {IMLocalized('Login with phone number')}
           </Button>
-        )}
+        )}*/}
 
         {loading && <TNActivityIndicator appStyles={appStyles}/>}
       </KeyboardAwareScrollView>

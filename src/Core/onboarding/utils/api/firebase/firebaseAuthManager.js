@@ -69,7 +69,7 @@ const createAccountWithEmailAndPassword = (userDetails, appConfig) => {
           if (response.error) {
             resolve({ error: response.error });
           } else {
-            // We created the user succesfully, time to upload the profile photo and update the users table with the correct URL
+            // We created the user successfully, time to upload the profile photo and update the users table with the correct URL
             let user = response.user;
             if (photoFile) {
               storageAPI.uploadFile(photoFile).then((response) => {

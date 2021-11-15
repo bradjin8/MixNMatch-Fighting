@@ -67,7 +67,7 @@ const ResetPasswordScreen = (props) => {
         <Text style={styles.title}>{IMLocalized('Reset Password')}</Text>
         <TextInput
           style={styles.InputContainer}
-          placeholder={IMLocalized('E-mail')}
+          placeholder={IMLocalized('Email')}
           placeholderTextColor="#aaaaaa"
           onChangeText={(text) => setEmail(text)}
           value={email}

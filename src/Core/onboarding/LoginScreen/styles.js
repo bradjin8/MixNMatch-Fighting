@@ -31,7 +31,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
       backgroundColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
       borderRadius: 30,
       padding: 20,
-      marginTop: 30,
+      marginTop: 50,
       alignSelf: 'center',
     },
     loginText: {
@@ -82,13 +82,20 @@ const dynamicStyles = (appStyles, colorScheme) => {
       marginTop: 20,
     },
     forgotPasswordContainer: {
+      marginTop: 50,
       width: '80%',
       alignSelf: 'center',
-      alignItems: 'flex-end',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
     },
     forgotPasswordText: {
       fontSize: 14,
       padding: 4,
+      // backgroundColor: '#ddd',
+      color: appStyles.colorSet[colorScheme].mainSubtextColor,
+      borderStyle: 'solid',
+      borderBottomWidth: 2,
+      borderBottomColor: appStyles.colorSet[colorScheme].mainSubtextColor,
     },
   });
 };

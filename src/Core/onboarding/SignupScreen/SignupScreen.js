@@ -52,7 +52,7 @@ const SignupScreen = (props) => {
   };
 
   const onRegister = async () => {
-    const {
+    /*const {
       error: usernameError,
     } = await authManager.validateUsernameFieldIfNeeded(inputFields, appConfig);
     if (usernameError) {
@@ -69,7 +69,7 @@ const SignupScreen = (props) => {
         password: '',
       }));
       return;
-    }
+    }*/
 
     if (!validateEmail(inputFields?.email?.trim())) {
       Alert.alert(
@@ -117,6 +117,24 @@ const SignupScreen = (props) => {
       return;
     }
 
+    if (inputFields?.fullName?.trim()?.length < 6) {
+      Alert.alert(
+        '',
+        IMLocalized(
+          'Full Name is too short. Please use at least 6 characters.',
+        ),
+        [{ text: IMLocalized('OK') }],
+        {
+          cancelable: false,
+        },
+      );
+      setInputFields((prevFields) => ({
+        ...prevFields,
+        fullName: '',
+      }));
+      return;
+    }
+
     // if (!validatePassword(password)) {
     //   Alert.alert(
     //     '',
@@ -141,7 +159,14 @@ const SignupScreen = (props) => {
     };
     if (userDetails.username) {
       userDetails.username = userDetails.username?.toLowerCase();
+    } else {
+      userDetails.username = userDetails.email.toLowerCase();
     }
+
+    userDetails.firstName = userDetails.fullName.split(' ')[0];
+    userDetails.lastName = userDetails.fullName.split(' ')[1];
+
+    // console.log('user', userDetails);
 
     authManager
       .createAccountWithEmailAndPassword(userDetails, appConfig)
