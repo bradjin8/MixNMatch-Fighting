@@ -2,7 +2,7 @@ import { Dimensions } from 'react-native';
 import { StyleSheet } from 'react-native';
 
 const { height } = Dimensions.get('window');
-const imageSize = height * 0.14;
+const imageSize = height * 0.3;
 const photoIconSize = imageSize * 0.27;
 
 const dynamicStyles = (appStyles, colorScheme) => {
@@ -21,8 +21,9 @@ const dynamicStyles = (appStyles, colorScheme) => {
     },
     imageContainer: {
       height: imageSize,
-      width: imageSize,
-      borderRadius: imageSize,
+      width: '100%',
+      // borderRadius: imageSize,
+      borderRadius: 0,
       shadowColor: '#006',
       shadowOffset: {
         width: 0,
@@ -38,11 +39,12 @@ const dynamicStyles = (appStyles, colorScheme) => {
       backgroundColor: '#d6d6d6',
       opacity: 0.8,
       zIndex: 2,
-      marginTop: imageSize * 0.77,
-      marginLeft: -imageSize * 0.29,
+      marginTop: imageSize * 0.73,
+      marginLeft: -imageSize * 0.27,
       width: photoIconSize,
       height: photoIconSize,
-      borderRadius: photoIconSize,
+      // borderRadius: photoIconSize,
+      borderRadius: 0,
     },
     closeButton: {
       alignSelf: 'flex-end',

@@ -28,7 +28,7 @@ const dynamicStyles = (colorScheme) => {
       alignSelf: 'center',
     },
     profilePictureContainer: {
-      marginTop: 30,
+      // marginTop: 30,
     },
     nameView: {
       width: '100%',
@@ -108,13 +108,18 @@ const dynamicStyles = (colorScheme) => {
       width: '92%',
       marginTop: 20,
       marginBottom: 50,
-      marginHorizontal: 12,
-      padding: 10,
+      marginHorizontal: '4%',
+      padding: 20,
       borderRadius: 10,
       borderWidth: 1,
-      borderColor: DynamicAppStyles.colorSet[colorScheme].inputBgColor,
+      borderColor: DynamicAppStyles.colorSet[colorScheme].mainSubtextColor,
       justifyContent: 'center',
       alignItems: 'center',
+    },
+    logoutBtn: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: DynamicAppStyles.colorSet[colorScheme].mainThemeForegroundColor,
     },
     inactiveDot: {
       backgroundColor: DynamicAppStyles.colorSet[colorScheme].grey6,

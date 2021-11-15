@@ -419,7 +419,7 @@ const MyProfileScreen = (props) => {
                 </Text>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.optionView} onPress={blocked}>
+            {/*<TouchableOpacity style={styles.optionView} onPress={blocked}>
               <View style={styles.iconView}>
                 <Image
                   style={{
@@ -436,9 +436,9 @@ const MyProfileScreen = (props) => {
                   {IMLocalized('Blocked Users')}
                 </Text>
               </View>
-            </TouchableOpacity>
+            </TouchableOpacity>*/}
             <TouchableOpacity style={styles.logoutView} onPress={onLogout}>
-              <Text style={styles.textLabel}>{IMLocalized('Logout')}</Text>
+              <Text style={styles.logoutBtn}>{IMLocalized('Logout')}</Text>
             </TouchableOpacity>
           </ScrollView>
           <ActionSheet

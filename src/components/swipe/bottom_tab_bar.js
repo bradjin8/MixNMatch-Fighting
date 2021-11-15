@@ -93,7 +93,7 @@ const BottomTabBar = (props) => {
             styles.button_container,
             getCardStyle2(),
             props.buttonContainerStyle,
-            {backgroundColor: '#D41212'}
+            {backgroundColor: '#FFF'}
           ]}>
           <Image
             source={AppStyles.iconSet.thumbDown}
@@ -110,7 +110,7 @@ const BottomTabBar = (props) => {
         </Animated.View>
       </TouchableWithoutFeedback>*/}
       <TouchableWithoutFeedback onPress={onLikePress}>
-        <Animated.View style={[styles.button_container, getCardStyle4(), {backgroundColor: '#4A8528'}]}>
+        <Animated.View style={[styles.button_container, getCardStyle4(), {backgroundColor: '#B50228'}]}>
           <Image
             source={AppStyles.iconSet.thumbUp}
             style={[styles.large_icon]}
