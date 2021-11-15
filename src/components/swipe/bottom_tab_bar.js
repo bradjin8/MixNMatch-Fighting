@@ -93,7 +93,7 @@ const BottomTabBar = (props) => {
             styles.button_container,
             getCardStyle2(),
             props.buttonContainerStyle,
-            {backgroundColor: '#FFF'}
+            {backgroundColor: '#414042'}
           ]}>
           <Image
             source={AppStyles.iconSet.thumbDown}

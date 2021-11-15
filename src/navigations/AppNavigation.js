@@ -73,7 +73,7 @@ const MyProfileStack = () => {
         options={({ navigation }) => ({
           headerTitle: () => (
             <TNTouchableIcon
-              imageStyle={{ /*tintColor: '#d1d7df', */ resizeMode: 'contain' }}
+              imageStyle={{ tintColor: '#d1d7df',  resizeMode: 'contain' }}
               iconSource={DynamicAppStyles.iconSet.logo}
               appStyles={DynamicAppStyles}
               onPress={() => navigation.navigate('Swipe')}
@@ -172,6 +172,7 @@ const DrawerStack = () => {
                 /*tintColor:
                   DynamicAppStyles.colorSet[colorScheme]
                     .mainThemeForegroundColor,*/
+                resizeMode: 'contain'
               }}
               iconSource={DynamicAppStyles.iconSet.logo}
               onPress={() =>
@@ -222,7 +223,7 @@ const DrawerStack = () => {
         options={({ navigation }) => ({
           headerTitle: () => (
             <TNTouchableIcon
-              imageStyle={{ /*tintColor: '#d1d7df'*/ }}
+              imageStyle={{ tintColor: '#d1d7df', resizeMode: 'contain' }}
               iconSource={DynamicAppStyles.iconSet.logo}
               onPress={() => navigation.navigate('Swipe')}
               appStyles={DynamicAppStyles}
@@ -232,8 +233,8 @@ const DrawerStack = () => {
             <TNTouchableIcon
               imageStyle={{
                 tintColor:
-                  DynamicAppStyles.colorSet[colorScheme]
-                    .mainThemeForegroundColor,
+                DynamicAppStyles.colorSet[colorScheme]
+                  .mainThemeForegroundColor,
               }}
               iconSource={DynamicAppStyles.iconSet.conversations}
               onPress={() =>
@@ -266,7 +267,6 @@ const DrawerStack = () => {
         name="Conversations"
         component={ConversationsStack}
       />
-
       <Stack.Screen
         options={{ headerShown: false }}
         name="MyProfileStack"

@@ -238,7 +238,7 @@ const DatingConfig = {
         title: IMLocalized('PUSH NOTIFICATIONS'),
         fields: [
           {
-            displayName: IMLocalized('New matches'),
+            displayName: IMLocalized('New Matches'),
             type: 'switch',
             editable: true,
             key: 'push_new_matches_enabled',
