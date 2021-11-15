@@ -18,8 +18,8 @@ const dynamicStyles = (appStyles, colorScheme) => {
     },
     title: {
       fontSize: 30,
-      fontWeight: 'bold',
-      color: appStyles.colorSet[colorScheme].mainTextColor,
+      fontWeight: 'normal',
+      color: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
       marginTop: 25,
       marginBottom: 20,
       alignSelf: 'stretch',
@@ -29,12 +29,13 @@ const dynamicStyles = (appStyles, colorScheme) => {
     loginContainer: {
       width: '70%',
       backgroundColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
-      borderRadius: 25,
-      padding: 10,
+      borderRadius: 30,
+      padding: 20,
       marginTop: 30,
       alignSelf: 'center',
     },
     loginText: {
+      fontWeight: 'bold',
       color: '#ffffff',
     },
     placeholder: {
@@ -42,7 +43,8 @@ const dynamicStyles = (appStyles, colorScheme) => {
     },
     InputContainer: {
       height: 42,
-      borderWidth: 1,
+      borderWidth: 0,
+      borderBottomWidth: 1,
       borderColor: appStyles.colorSet[colorScheme].grey3,
       backgroundColor: modedColor(
         appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
@@ -54,7 +56,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
       alignSelf: 'center',
       marginTop: 20,
       alignItems: 'center',
-      borderRadius: 25,
+      borderRadius: 0,
       textAlign: I18nManager.isRTL ? 'right' : 'left',
     },
 

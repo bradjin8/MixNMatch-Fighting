@@ -31,7 +31,7 @@ const LoadScreen = (props) => {
 
   const setAppState = async () => {
     const shouldShowOnboardingFlow = await deviceStorage.getShouldShowOnboardingFlow();
-    if (!shouldShowOnboardingFlow) {
+    if (false && !shouldShowOnboardingFlow) {
       if (appConfig.isDelayedLoginEnabled) {
         fetchPersistedUserIfNeeded()
         return;

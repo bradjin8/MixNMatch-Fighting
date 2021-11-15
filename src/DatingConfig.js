@@ -18,7 +18,7 @@ const DatingConfig = {
     walkthroughScreens: [
       {
         icon: require('../assets/images/workthrough-1.png'),
-        title: 'Mix It Up!',
+        title: 'Mix Up Skills',
         description: IMLocalized(
           'Sign up and mix up your fights with\nanother style, develop, and fight!',
         ),
@@ -28,13 +28,13 @@ const DatingConfig = {
         title: 'Yes or No',
         description: IMLocalized('Use the thumbs if you\'d like to add them\nas a contact or to disregard'),
       },
-      {
+      /*{
         icon: require('../assets/images/workthrough-3.png'),
         title: 'Message',
         description: IMLocalized(
           'Communicate, plan, and meet others in\none platform',
         ),
-      },
+      },*/
       {
         icon: require('../assets/images/workthrough-4.png'),
         title: 'Match Up!',
@@ -73,6 +73,7 @@ const DatingConfig = {
     },
   ],
   signupFields: [
+/*
     {
       displayName: IMLocalized('First Name'),
       type: 'text',
@@ -97,7 +98,7 @@ const DatingConfig = {
       key: 'username',
       placeholder: 'Username',
     },
-/*
+*/
     {
       displayName: IMLocalized('Full Name'),
       type: 'text',
@@ -114,14 +115,13 @@ const DatingConfig = {
       key: 'phoneNumber',
       placeholder: 'Phone Number',
     },
-*/
     {
-      displayName: IMLocalized('E-mail Address'),
+      displayName: IMLocalized('Email Address'),
       type: 'text',
       editable: true,
       regex: regexForNames,
       key: 'email',
-      placeholder: 'E-mail Address',
+      placeholder: 'Email Address',
       autoCapitalize: 'none',
     },
     {

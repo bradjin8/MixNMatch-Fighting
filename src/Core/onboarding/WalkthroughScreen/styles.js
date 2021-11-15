@@ -3,16 +3,16 @@ import { StyleSheet } from 'react-native';
 const dynamicStyles = (appStyles, colorScheme) => {
   return StyleSheet.create({
     title: {
-      fontSize: 25,
+      fontSize: 34,
       fontWeight: 'bold',
       textAlign: 'center',
       paddingBottom: 25,
-      color: 'white',
+      color: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
     },
     text: {
       fontSize: 18,
       textAlign: 'center',
-      color: 'white',
+      color: appStyles.colorSet[colorScheme].mainSubtextColor,
       paddingLeft: 10,
       paddingRight: 10,
     },
@@ -24,24 +24,37 @@ const dynamicStyles = (appStyles, colorScheme) => {
     },
     container: {
       flex: 1,
+      flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
     },
     backgroundImage: {
       flex: 1,
+      top: '-36%',
+      height: '100%',
       width: '100%',
-      justifyContent: 'center',
-      alignItems: 'center',
+      // justifyContent: 'flex-end',
+      // alignItems: 'center',
     },
     descriptionContainer: {
-      marginTop: '90%'
+      top: '-25%',
+      // flex: 0.4,
+      // marginTop: '100%'
     },
     button: {
       fontSize: 18,
       color: 'white',
       marginTop: 10,
     },
+    dot: {
+      backgroundColor: 'rgba(187,187,187,0.3)',
+      top: '-20%'
+    },
+    activeDot: {
+      backgroundColor: '#BBBBBB',
+      top: '-20%'
+    }
   });
 };
 

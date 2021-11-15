@@ -16,8 +16,8 @@ const dynamicStyles = (appStyles, colorScheme) => {
     },
     title: {
       fontSize: 30,
-      fontWeight: 'bold',
-      color: appStyles.colorSet[colorScheme].mainTextColor,
+      fontWeight: 'normal',
+      color: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
       marginTop: 25,
       marginBottom: 30,
       alignSelf: 'stretch',
@@ -47,7 +47,8 @@ const dynamicStyles = (appStyles, colorScheme) => {
     },
     InputContainer: {
       height: 42,
-      borderWidth: 1,
+      borderWidth: 0,
+      borderBottomWidth: 1,
       borderColor: appStyles.colorSet[colorScheme].grey3,
       backgroundColor: modedColor(
         appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
@@ -59,7 +60,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
       alignSelf: 'center',
       marginTop: 20,
       alignItems: 'center',
-      borderRadius: 25,
+      // borderRadius: 25,
       textAlign: I18nManager.isRTL ? 'right' : 'left',
     },
 
@@ -67,11 +68,12 @@ const dynamicStyles = (appStyles, colorScheme) => {
       alignSelf: 'center',
       width: appStyles.sizeSet.buttonWidth,
       backgroundColor: appStyles.colorSet[colorScheme].mainThemeForegroundColor,
-      borderRadius: appStyles.sizeSet.radius,
-      padding: 10,
+      borderRadius: 30,
+      padding: 20,
       marginTop: 50,
     },
     signupText: {
+      fontWeight: 'bold',
       color: appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
     },
     image: {

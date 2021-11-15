@@ -38,7 +38,7 @@
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		672743E424979C5300A7EC51 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		84B02EB2223E2B3900F8F253 /* libPods-mixNmatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-mixNmatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DF942E0915788AC557F60DF /* Pods/Target Support Files/Pods-mixNmatch/Pods-mixNmatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods/Target Support Files/Pods-mixNmatch/Pods-mixNmatch.release.xcconfig"; sourceTree = "<group>"; };
+		8DF942E0915788AC557F60DF /* Pods-mixNmatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods/Target Support Files/Pods-mixNmatch/Pods-mixNmatch.release.xcconfig"; sourceTree = "<group>"; };
 		9D9BF02A21B9E82F002C44BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "mixNmatch/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				21652C5099A56503BADC8F65 /* Pods-mixNmatch.debug.xcconfig */,
-				8DF942E0915788AC557F60DF /* Pods/Target Support Files/Pods-mixNmatch/Pods-mixNmatch.release.xcconfig */,
+				8DF942E0915788AC557F60DF /* Pods-mixNmatch.release.xcconfig */,
 				0149C2117D272CE7C91D8FA1 /* Pods-mixNmatch.release.xcconfig */,
 			);
 			name = Pods;
@@ -346,7 +346,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-mixNmatch/Pods-mixNmatch-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioVideo/TwilioVideo.framework/TwilioVideo",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/react-native-webrtc/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -440,7 +440,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DF942E0915788AC557F60DF /* Pods/Target Support Files/Pods-mixNmatch/Pods-mixNmatch.release.xcconfig */;
+			baseConfigurationReference = 8DF942E0915788AC557F60DF /* Pods-mixNmatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

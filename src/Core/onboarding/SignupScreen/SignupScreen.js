@@ -201,7 +201,7 @@ const SignupScreen = (props) => {
           containerStyle={styles.signupContainer}
           style={styles.signupText}
           onPress={() => onRegister()}>
-          {IMLocalized('Sign Up')}
+          {IMLocalized('Create')}
         </Button>
       </>
     );
@@ -218,7 +218,7 @@ const SignupScreen = (props) => {
             source={appStyles.iconSet.backArrow}
           />
         </TouchableOpacity>
-        <Text style={styles.title}>{IMLocalized('Create new account')}</Text>
+        <Text style={styles.title}>{IMLocalized('Create New Account')}</Text>
         {/*<TNProfilePictureSelector
           setProfilePictureFile={setProfilePictureFile}
           appStyles={appStyles}
@@ -241,11 +241,11 @@ const SignupScreen = (props) => {
             </Button>
           </>
         )}
-        <TermsOfUseView
-          tosLink={appConfig.tosLink}
-          privacyPolicyLink={appConfig.privacyPolicyLink}
-          style={styles.tos}
-        />
+        {/*<TermsOfUseView*/}
+        {/*  tosLink={appConfig.tosLink}*/}
+        {/*  privacyPolicyLink={appConfig.privacyPolicyLink}*/}
+        {/*  style={styles.tos}*/}
+        {/*/>*/}
       </KeyboardAwareScrollView>
       {loading && <TNActivityIndicator appStyles={appStyles} />}
     </View>

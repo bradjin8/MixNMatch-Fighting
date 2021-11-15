@@ -165,7 +165,7 @@ const _styleSet = {
   },
   backArrowStyle: {
     resizeMode: 'contain',
-    tintColor: '#eb5a6d',
+    tintColor: lightColorSet.mainTextColor,
     width: 25,
     height: 25,
     marginTop: Platform.OS === 'ios' ? 50 : 20,
