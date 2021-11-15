@@ -73,7 +73,7 @@ const MyProfileStack = () => {
         options={({ navigation }) => ({
           headerTitle: () => (
             <TNTouchableIcon
-              imageStyle={{ /*tintColor: '#d1d7df'*/ }}
+              imageStyle={{ /*tintColor: '#d1d7df', */ resizeMode: 'contain' }}
               iconSource={DynamicAppStyles.iconSet.logo}
               appStyles={DynamicAppStyles}
               onPress={() => navigation.navigate('Swipe')}
