@@ -62,7 +62,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
       transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
     },
     phoneInputTextStyle: {
-      borderLeftWidth: I18nManager.isRTL ? 0 : 1,
+      // borderLeftWidth: I18nManager.isRTL ? 0 : 1,
       borderRightWidth: I18nManager.isRTL ? 1 : 0,
       borderLeftWidth: 1,
       borderColor: appStyles.colorSet[colorScheme].grey3,
@@ -71,7 +71,7 @@ const dynamicStyles = (appStyles, colorScheme) => {
       color: appStyles.colorSet[colorScheme].mainTextColor,
       textAlign: I18nManager.isRTL ? 'right' : 'left',
       borderBottomRightRadius: I18nManager.isRTL ? 0 : 25,
-      borderTopRightRadius: 25,
+      // borderTopRightRadius: 25,
       borderTopRightRadius: I18nManager.isRTL ? 0 : 25,
       borderBottomLeftRadius: I18nManager.isRTL ? 25 : 0,
       borderTopLeftRadius: I18nManager.isRTL ? 25 : 0,

@@ -15,6 +15,7 @@ import MyProfileScreen from '../screens/MyProfileScreen/MyProfileScreen';
 import AddProfilePictureScreen from '../screens/AddProfilePictureScreen';
 import LoginScreen from '../Core/onboarding/LoginScreen/LoginScreen';
 import SignupScreen from '../Core/onboarding/SignupScreen/SignupScreen';
+import SportsScreen from '../Core/onboarding/SportsScreen/SportsScreen';
 import WelcomeScreen from '../Core/onboarding/WelcomeScreen/WelcomeScreen';
 import WalkthroughScreen from '../Core/onboarding/WalkthroughScreen/WalkthroughScreen';
 import ResetPasswordScreen from '../Core/onboarding/ResetPasswordScreen/ResetPasswordScreen';
@@ -45,6 +46,7 @@ const LoginStack = () => {
       />
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Signup" component={SignupScreen} />
+      <Stack.Screen name="Sports" component={SportsScreen} />
       <Stack.Screen name="Sms" component={SmsAuthenticationScreen} />
       <Stack.Screen
         name="ResetPassword"

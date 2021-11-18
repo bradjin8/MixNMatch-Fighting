@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Alert,
   Image,
@@ -177,6 +177,12 @@ const SignupScreen = (props) => {
             user: response.user,
           });
           Keyboard.dismiss();
+          props.navigation.push('Sports', {
+            appStyles,
+            authManager,
+            appConfig,
+          });
+          return;
           props.navigation.reset({
             index: 0,
             routes: [{ name: 'MainStack', params: { user: user } }],
@@ -194,6 +200,14 @@ const SignupScreen = (props) => {
         }
       });
   };
+
+  // useEffect(() => {
+  //   props.navigation.push('Sports', {
+  //     appStyles,
+  //     authManager,
+  //     appConfig,
+  //   });
+  // }, [])
 
   const onChangeInputFields = (text, key) => {
     setInputFields((prevFields) => ({
