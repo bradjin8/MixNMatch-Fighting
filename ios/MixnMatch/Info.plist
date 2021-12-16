@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Mix n Match</string>
+	<string>Boxeo</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -42,7 +42,7 @@
 	<key>FacebookAppID</key>
 	<string>285315185217069</string>
 	<key>FacebookDisplayName</key>
-	<string>iDatingApp</string>
+	<string>Boxeo</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -66,15 +66,15 @@
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) would like to use your camera</string>
+	<string>$(PRODUCT_NAME) would like to use your camera to provide accurate representation of your profile. On your profile other fighters will be able to see your physical capabilities or given an idea for what they are up against</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>$(PRODUCT_NAME) would like to use your location</string>
+	<string>$(PRODUCT_NAME) would like to use your location to provide the fighters a location for proximity for others to pop up in your area to present future fighting opportunities</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME) would like access to your microphone, needed when you call your friends.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>$(PRODUCT_NAME) would like access to your Photo Library</string>
+	<string>$(PRODUCT_NAME) would like access to your Photo Library to provide accurate representation of your profile. On your profile other fighters will be able to see your physical capabilities or given an idea for what they are up against</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) would like access to your photo gallery</string>
+	<string>$(PRODUCT_NAME) would like access to your photo gallery to provide accurate representation of your profile. On your profile other fighters will be able to see your physical capabilities or given an idea for what they are up against</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
